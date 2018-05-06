@@ -268,6 +268,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 3400623}
+--- !u!1 &18053826 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1558155884618436, guid: a257ef1acdc84fa43a32f58b903d9ecd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1758572260}
+--- !u!114 &18053827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18053826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ed010e7a11cbc40a712087b936c5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckl: {fileID: 1764013417}
+  c: {fileID: 11400000, guid: 915d5fd8b5e92444eabe4a00ec6728e7, type: 2}
 --- !u!1001 &179567631
 Prefab:
   m_ObjectHideFlags: 0
@@ -618,6 +636,24 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224342742500061974, guid: 7713d4ee8316f214996bf384ad7b95da,
     type: 2}
   m_PrefabInternal: {fileID: 383722579}
+--- !u!1 &404484008 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1558155884618436, guid: a257ef1acdc84fa43a32f58b903d9ecd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1782242243}
+--- !u!114 &404484011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404484008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ed010e7a11cbc40a712087b936c5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckl: {fileID: 1764013417}
+  c: {fileID: 11400000, guid: a6d51d731845e0e48b20c3171d805d92, type: 2}
 --- !u!1 &411692171
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +735,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &423129595 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1558155884618436, guid: a257ef1acdc84fa43a32f58b903d9ecd,
+    type: 2}
+  m_PrefabInternal: {fileID: 304220513}
+--- !u!114 &423129596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423129595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ed010e7a11cbc40a712087b936c5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckl: {fileID: 1764013417}
+  c: {fileID: 11400000, guid: f8e422cf45d4b554d855eb8a4a201743, type: 2}
 --- !u!1 &435396625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,6 +1473,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 638211799}
+--- !u!1 &672566182 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1558155884618436, guid: a257ef1acdc84fa43a32f58b903d9ecd,
+    type: 2}
+  m_PrefabInternal: {fileID: 179567631}
+--- !u!114 &672566183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672566182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ed010e7a11cbc40a712087b936c5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckl: {fileID: 1764013417}
+  c: {fileID: 11400000, guid: 9a85e6c00bce0d149a4df9799e4e2b5d, type: 2}
 --- !u!1 &753636277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,7 +1822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &771611853
 Transform:
   m_ObjectHideFlags: 0
@@ -2089,6 +2161,24 @@ Transform:
   m_Father: {fileID: 771611853}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &892093028 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1558155884618436, guid: a257ef1acdc84fa43a32f58b903d9ecd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1153575592}
+--- !u!114 &892093029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892093028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ed010e7a11cbc40a712087b936c5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckl: {fileID: 1764013417}
+  c: {fileID: 11400000, guid: 18f551c3d4fff1542959df7e7c53d6d7, type: 2}
 --- !u!1 &915812963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,7 +2193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &915812964
 Transform:
   m_ObjectHideFlags: 0
@@ -3443,6 +3533,24 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224015361998113996, guid: a257ef1acdc84fa43a32f58b903d9ecd,
     type: 2}
   m_PrefabInternal: {fileID: 1758572260}
+--- !u!1 &1714423390 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1558155884618436, guid: a257ef1acdc84fa43a32f58b903d9ecd,
+    type: 2}
+  m_PrefabInternal: {fileID: 2138837927}
+--- !u!114 &1714423391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714423390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ed010e7a11cbc40a712087b936c5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckl: {fileID: 1764013417}
+  c: {fileID: 11400000, guid: 78b9a6115b2a03b448208f0d5f09e6f0, type: 2}
 --- !u!1 &1745644885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3727,8 +3835,8 @@ GameObject:
   - component: {fileID: 1764013415}
   - component: {fileID: 1764013414}
   - component: {fileID: 1764013413}
-  - component: {fileID: 1764013417}
   - component: {fileID: 1764013418}
+  - component: {fileID: 1764013417}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3825,11 +3933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca341e328e3800a4b88ee72a73b93580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckliste:
-  - {fileID: 11400000, guid: 915d5fd8b5e92444eabe4a00ec6728e7, type: 2}
-  - {fileID: 11400000, guid: a6d51d731845e0e48b20c3171d805d92, type: 2}
-  - {fileID: 11400000, guid: 78b9a6115b2a03b448208f0d5f09e6f0, type: 2}
-  - {fileID: 11400000, guid: f8e422cf45d4b554d855eb8a4a201743, type: 2}
+  deckliste: []
 --- !u!114 &1764013418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4663,6 +4767,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2052280223}
+--- !u!1 &2056448566 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1558155884618436, guid: a257ef1acdc84fa43a32f58b903d9ecd,
+    type: 2}
+  m_PrefabInternal: {fileID: 979381411}
+--- !u!114 &2056448567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2056448566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ed010e7a11cbc40a712087b936c5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckl: {fileID: 1764013417}
+  c: {fileID: 11400000, guid: bc40247e4cc45ad4e81d9b411011fb60, type: 2}
 --- !u!1001 &2056589939
 Prefab:
   m_ObjectHideFlags: 0

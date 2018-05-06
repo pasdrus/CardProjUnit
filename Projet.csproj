@@ -291,6 +291,7 @@
   <ItemGroup>
     <Compile Include="Assets\Card\Card1.cs" />
     <Compile Include="Assets\Card\CardDisplay1.cs" />
+    <Compile Include="Assets\click.cs" />
     <Compile Include="Assets\deck.cs" />
     <Compile Include="Assets\Drag.cs" />
     <Compile Include="Assets\Drop.cs" />

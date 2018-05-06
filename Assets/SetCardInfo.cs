@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System;
 
 public class SetCardInfo : MonoBehaviour
 {
@@ -10,28 +11,24 @@ public class SetCardInfo : MonoBehaviour
     private deck _currentCard;
     void Start()
     {
-         _currentCard= GetComponent<deck>();
-        
-                foreach (Card1 c in _currentCard.deckliste)
-                    Debug.Log("Card id: " + c.id);
+    /*    _currentCard = GetComponent<deck>();
+
+        foreach (Card1 c in _currentCard.deckliste)
+            Debug.Log("Card id: " + c.id);*/
     }
 
-    /*
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            SaveData();
-        }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            ReadData();
+            Test();
         }
     }
 
 
-    void SaveData()
+
+ /*   void SaveData()
     {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/User.txt");
@@ -44,7 +41,7 @@ public class SetCardInfo : MonoBehaviour
         bf.Serialize(file, _currentCard);
   //  }
         file.Close();
-   /*}
+   }
         string path = Application.persistentDataPath + "/deck.json";
         // for (int i = 0; i < deck.Count; i++)
         //  {
@@ -75,9 +72,14 @@ public class SetCardInfo : MonoBehaviour
         {
             Debug.Log("Erreur tmtc");
         }
+
     }*/
+
+   public void Test()
+    {
+        _currentCard = GetComponent<deck>();
+
+        foreach (Card1 c in _currentCard.deckliste)
+            Debug.Log("Card id: " + c.id);
+    }
 }
-
-
-
-
