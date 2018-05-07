@@ -10,7 +10,7 @@ public class click : MonoBehaviour, IPointerDownHandler
     public deck deckl;
     public Card1 c;
 
-
+    // au click on ajout la carte à la liste
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log(c.name + " Was Clicked.");
