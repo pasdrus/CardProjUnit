@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c781fba00c5a8a4408ac6c1f3d5d7892, type: 3}
+  m_Name: DB_ActionCard
+  m_EditorClassIdentifier: 
+  dataAsArray:
+  - {fileID: 11400000, guid: c7094e1607cb2cf4bb0d74a945567467, type: 2}
