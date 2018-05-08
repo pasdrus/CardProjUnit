@@ -18,7 +18,7 @@ public class Card1 : ScriptableObject
     public int multElem;
     public int nbTurn;
     public int nbDes;
-    public enum Action { ATTACK, UTILITARY, HAND };
-    public Action typeOfAction = Action.ATTACK;
+   /* public enum Action { ATTACK, UTILITARY, HAND };
+    public Action typeOfAction = Action.ATTACK;*/
 
 }

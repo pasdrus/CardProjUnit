@@ -296,8 +296,9 @@
     <Compile Include="Assets\deck.cs" />
     <Compile Include="Assets\Drag.cs" />
     <Compile Include="Assets\Drop.cs" />
+    <Compile Include="Assets\SaveJson\JsonHelper.cs" />
+    <Compile Include="Assets\SaveJson\SetCardInfo.cs" />
     <Compile Include="Assets\ScriptMenu\MainMenu.cs" />
-    <Compile Include="Assets\SetCardInfo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

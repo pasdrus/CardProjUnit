@@ -29,7 +29,8 @@ public class addObjectTolist : MonoBehaviour
 
             Card1 c = _currentCard.deckliste[i];
             copy.GetComponentInChildren<Text>().text = c.name;
-            // copy.GetComponentInChildren<Image>().sprite = c.artwork;
+
+            copy.GetComponentInChildren<Image>().sprite= c.artwork;
             int copyIndex = i;
             copy.GetComponent<Button>().onClick.AddListener(
 
