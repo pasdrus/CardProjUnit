@@ -8,7 +8,8 @@ public class SetCardInfo : MonoBehaviour
 {
 
 
-    private deck _currentCard;
+    //private deck _currentCard;
+    public deck _currentCard;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class SetCardInfo : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+       if (Input.GetKeyDown(KeyCode.S))
         {
             SaveData();
         }
@@ -31,27 +32,34 @@ public class SetCardInfo : MonoBehaviour
 
 
 
-    void SaveData()
+   public void SaveData()
     {
-        int i = 0;
-        string path = Application.persistentDataPath + "/deck.json";
-        _currentCard = GetComponent<deck>();
-
-        // On déclare un tableau de Card de la taille de la deckListe.
-        Card1[] testjson = new Card1[_currentCard.deckliste.Count];
-        // pour chaque carte dans la liste on ajoute la carte dans l'array de card
-        foreach (Card1 c in _currentCard.deckliste)
+        //si la deck liste n'est pas vide on peut sauvegarder.
+        if (_currentCard.deckliste.Count != 0)
         {
-            testjson[i] = c;
-            i++;
-        }
-        string cardsToJson = JsonHelper.ToJson(testjson, true);
-        Debug.Log(cardsToJson);
-        System.IO.File.AppendAllText(path, cardsToJson);
+            int i = 0;
+            //Sauvegarde dans C:\Users\Admin Flo\AppData\LocalLow\DefaultCompany\CardGame3D ! Pour chez moi.
+            string path = Application.persistentDataPath + "/deck.json";
+            _currentCard = GetComponent<deck>();
 
+            // On déclare un tableau de Card de la taille de la deckListe.
+            Card1[] testjson = new Card1[_currentCard.deckliste.Count];
+            // pour chaque carte dans la liste on ajoute la carte dans l'array de card
+            foreach (Card1 c in _currentCard.deckliste)
+            {
+                testjson[i] = c;
+                i++;
+            }
+
+            // Conversion pour le format json à l'aide de la classe JsonHelper.
+            string cardsToJson = JsonHelper.ToJson(testjson, true);
+            Debug.Log(cardsToJson);
+            // on ecrit dans le fichier
+            System.IO.File.WriteAllText(path, cardsToJson);
+        }
     }
 
-    void ReadData()
+    public void ReadData()
     {
         string path = Application.persistentDataPath + "/deck.json";
         //On lit tout le fichier json
@@ -64,6 +72,8 @@ public class SetCardInfo : MonoBehaviour
         {
             Card1 c = card[i];
             Debug.Log(c.name);
+           _currentCard.deckliste.Add(c);
+          
         }
 
 
