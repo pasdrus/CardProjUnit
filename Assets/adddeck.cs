@@ -72,8 +72,10 @@ public class adddeck : MonoBehaviour
                      }
 
                      //on sauvegarde la liste et on la charge avec la scene des decks
-                  DontDestroyOnLoad(_currentCard);
-                     DontDestroyOnLoad(recup);
+
+                         DontDestroyOnLoad(_currentCard);
+                         DontDestroyOnLoad(recup);
+
                     SceneManager.LoadScene(3,LoadSceneMode.Single);
 
                  }
