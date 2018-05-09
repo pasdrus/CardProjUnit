@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour {
 
     public void ListeDeck2()
     {
-        if (_currentCard.deckliste.Count < 10) { }
+        if (_currentCard.deckliste.Count < 15) { }
         else
         {
         SceneManager.LoadScene(2);

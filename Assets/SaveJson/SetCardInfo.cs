@@ -29,7 +29,7 @@ public class SetCardInfo : MonoBehaviour
    public void SaveData()
     {
         //si la deck liste ne contient pas 15 cartes, on ne peut pas la sauvegarder.
-        if (_currentCard.deckliste.Count != 10)
+        if (_currentCard.deckliste.Count != 15)
         {
             Debug.Log("il manque des cartes");
         }

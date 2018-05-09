@@ -15,7 +15,7 @@ public class click : MonoBehaviour, IPointerDownHandler
     {
         Debug.Log(c.name + " Was Clicked.");
         //On ne peut pas ajouter + de 15 cartes dans le deck.
-        if (deckl.deckliste.Count < 10 && Verif(c)==true)
+        if (deckl.deckliste.Count < 15 && Verif(c)==true)
         {
             deckl.deckliste.Add(c);
         }
@@ -32,7 +32,7 @@ public class click : MonoBehaviour, IPointerDownHandler
                 nb++;
             }
         }
-        if (nb == 2)
+        if (nb == 3)
         {
             test = false;
         }
