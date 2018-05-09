@@ -15,9 +15,14 @@ public class MainMenu : MonoBehaviour {
         Application.Quit();
     }
 
-    public void Deck()
+    public void ListeDeck()
     {
         SceneManager.LoadScene(2);
+    }
+
+   public void Deck()
+    {
+        SceneManager.LoadScene(3);
     }
 
     public void BackDeck()
