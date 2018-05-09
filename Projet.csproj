@@ -289,17 +289,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\adddeck.cs" />
-    <Compile Include="Assets\addObjectTolist.cs" />
-    <Compile Include="Assets\affichedeck.cs" />
     <Compile Include="Assets\Card\Card1.cs" />
     <Compile Include="Assets\Card\CardDisplay1.cs" />
-    <Compile Include="Assets\click.cs" />
-    <Compile Include="Assets\deck.cs" />
+    <Compile Include="Assets\decks\adddeck.cs" />
+    <Compile Include="Assets\decks\addObjectTolist.cs" />
+    <Compile Include="Assets\decks\affichedeck.cs" />
+    <Compile Include="Assets\decks\Booldontdestroy.cs" />
+    <Compile Include="Assets\decks\click.cs" />
+    <Compile Include="Assets\decks\deck.cs" />
+    <Compile Include="Assets\decks\listedecks.cs" />
+    <Compile Include="Assets\decks\RecupName.cs" />
     <Compile Include="Assets\Drag.cs" />
     <Compile Include="Assets\Drop.cs" />
-    <Compile Include="Assets\listedecks.cs" />
-    <Compile Include="Assets\RecupName.cs" />
     <Compile Include="Assets\SaveJson\JsonHelper.cs" />
     <Compile Include="Assets\SaveJson\SetCardInfo.cs" />
     <Compile Include="Assets\ScriptMenu\MainMenu.cs" />
