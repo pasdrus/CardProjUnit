@@ -18,6 +18,7 @@ public class affichedeck : MonoBehaviour {
         {
             test.deckliste.Add(c);
         }
+        Destroy(deckl);
 	}
 	
 	// Update is called once per frame

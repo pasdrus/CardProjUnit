@@ -19,25 +19,10 @@ public class SetCardInfo : MonoBehaviour
 
     void Start()
     {
- 
+        ReadDataDeckliste();
     }
 
 
-    void Update()
-    {
-       if (Input.GetKeyDown(KeyCode.S))
-        {
-            SaveData();
-        }
-
-      if (Input.GetKeyDown(KeyCode.R))
-        {
-            ReadDataDeckliste();
-        }
-
-
-        // ReadData(namefichier);
-    }
 
 
 
@@ -65,13 +50,10 @@ public class SetCardInfo : MonoBehaviour
             string cardsToJson = JsonHelper.ToJson(testjson, true);
             Debug.Log(cardsToJson);
             // on ecrit dans le fichier
-            System.IO.File.WriteAllText(path, cardsToJson);
-
+            //System.IO.File.WriteAllText(path, cardsToJson);
             // quand on sauvegarde le deck , on l'ajoute au fichier xxdeckxx.json 
             string[] fis;
-           //  if (listed.deckls.Count == 0) { fis = new string[1]; fis[0] = namefichier; }
-          //    else
-          //   {
+
                 fis = new string[listed.deckls.Count+1];
 
                 int j = 0;
@@ -81,12 +63,23 @@ public class SetCardInfo : MonoBehaviour
                     j++;
 
                 }
+
+                // si le fichier du deck existe déjà on écrit les nouvelles cartes dedans, sinon on écrit les cartes dans le fichier et on l'ajoute à la liste des decks.
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.WriteAllText(path, cardsToJson); }
+            else
+            {
+
+                System.IO.File.WriteAllText(path, cardsToJson);
                 fis[listed.deckls.Count] = namefichier;
-           // }
-           
-            string fi = JsonHelper.ToJson(fis, true);
-            path = Application.persistentDataPath + "/xxdeckxx.json";
-            System.IO.File.WriteAllText(path, fi);
+                string fi = JsonHelper.ToJson(fis, true);
+                path = Application.persistentDataPath + "/xxdeckxx.json";
+                System.IO.File.WriteAllText(path, fi);
+            }
+
+            
+
         }
     }
 
