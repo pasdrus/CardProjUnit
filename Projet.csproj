@@ -299,6 +299,7 @@
     <Compile Include="Assets\Drag.cs" />
     <Compile Include="Assets\Drop.cs" />
     <Compile Include="Assets\listedecks.cs" />
+    <Compile Include="Assets\RecupName.cs" />
     <Compile Include="Assets\SaveJson\JsonHelper.cs" />
     <Compile Include="Assets\SaveJson\SetCardInfo.cs" />
     <Compile Include="Assets\ScriptMenu\MainMenu.cs" />

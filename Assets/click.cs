@@ -14,6 +14,10 @@ public class click : MonoBehaviour, IPointerDownHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log(c.name + " Was Clicked.");
-        deckl.deckliste.Add(c);
+        //On ne peut pas ajouter + de 15 cartes dans le deck.
+        if (deckl.deckliste.Count < 15)
+        {
+            deckl.deckliste.Add(c);
+        }
     }
 }

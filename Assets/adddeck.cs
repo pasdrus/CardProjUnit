@@ -13,6 +13,7 @@ public class adddeck : MonoBehaviour
     public GameObject content;
     public listedecks liste;
     public deck _currentCard;
+    public RecupName recup;
 
 
 
@@ -48,9 +49,12 @@ public class adddeck : MonoBehaviour
                     // 
                      Debug.Log("i = " + copyIndex);
                      string d = liste.deckls[copyIndex];
-         
+                     
                      Debug.Log(d);
                      copy.GetComponentInChildren<Text>().text = d;
+                  
+                    recup.namefile = d;
+ 
                      string path = Application.persistentDataPath + "/" + d + ".json";
                      // string path = Application.persistentDataPath + "/deck.json";
                      //On lit tout le fichier json
@@ -69,6 +73,7 @@ public class adddeck : MonoBehaviour
 
                      //on sauvegarde la liste et on la charge avec la scene des decks
                   DontDestroyOnLoad(_currentCard);
+                     DontDestroyOnLoad(recup);
                     SceneManager.LoadScene(3,LoadSceneMode.Single);
 
                  }

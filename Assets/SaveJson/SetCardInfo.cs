@@ -28,9 +28,13 @@ public class SetCardInfo : MonoBehaviour
 
    public void SaveData()
     {
-        //si la deck liste n'est pas vide on peut sauvegarder.
-        if (_currentCard.deckliste.Count != 0)
+        //si la deck liste ne contient pas 15 cartes, on ne peut pas la sauvegarder.
+        if (_currentCard.deckliste.Count != 15)
         {
+            Debug.Log("il manque des cartes");
+        }
+        else
+        { 
             int i = 0;
             //Sauvegarde dans C:\Users\Admin Flo\AppData\LocalLow\DefaultCompany\CardGame3D ! Pour chez moi.
             // string path = Application.persistentDataPath + "/deck.json";
@@ -86,36 +90,43 @@ public class SetCardInfo : MonoBehaviour
     public void ReadData(string test)
     {
        string path = Application.persistentDataPath + "/" + test + ".json";
-       // string path = Application.persistentDataPath + "/deck.json";
-        //On lit tout le fichier json
-       string contents = System.IO.File.ReadAllText(path);
+            // string path = Application.persistentDataPath + "/deck.json";
+            //On lit tout le fichier json
+            string contents = System.IO.File.ReadAllText(path);
 
-        //On recupère les objets dans le fichier .json à l'aide de la classe JsonHelper et on les stocks dans un Array de Card
-        Card1[] card = JsonHelper.FromJson<Card1>(contents);
+            //On recupère les objets dans le fichier .json à l'aide de la classe JsonHelper et on les stocks dans un Array de Card
+            Card1[] card = JsonHelper.FromJson<Card1>(contents);
 
-        for (int i = 0; i < card.Length; i++)
-        {
-            Card1 c = card[i];
-            Debug.Log(c.name);
-           _currentCard.deckliste.Add(c);
-          
-        }
-        }
+            for (int i = 0; i < card.Length; i++)
+            {
+                Card1 c = card[i];
+                Debug.Log(c.name);
+                _currentCard.deckliste.Add(c);
+
+            }
+        
+      
+    }
+
 
     public void ReadDataDeckliste()
     {
         string path = Application.persistentDataPath + "/xxdeckxx.json";
-        string contents = System.IO.File.ReadAllText(path);
-        String[] fis = JsonHelper.FromJson<String>(contents);
-        Debug.Log(contents);
-        for (int i = 0; i < fis.Length; i++)
+        if (System.IO.File.Exists(path))
         {
 
-            String s = fis[i]; Debug.Log(s);
-            listed.deckls.Add(s);
-        }
-    }
+            string contents = System.IO.File.ReadAllText(path);
+            String[] fis = JsonHelper.FromJson<String>(contents);
+            Debug.Log(contents);
+            for (int i = 0; i < fis.Length; i++)
+            {
 
+                String s = fis[i]; Debug.Log(s);
+                listed.deckls.Add(s);
+            }
+        }
+        else { };
+    }
 
     public void Textchange(string newText)
     {
