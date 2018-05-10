@@ -5,6 +5,7 @@ Assets/FirstScene.unity
 Assets/listedeck.unity
 Assets/DeckAttack.unity
 SceneListEnd?
+33bf50e74bbf2235f3fdd99c02036a7d Assembly-CSharp.dll:.Booldontdestroy
 75cd0c6c744b9733ef29aa6c59ece2b1 Assembly-CSharp.dll:TMPro.Examples.VertexZoom
 c906602d9b43cc5e075f80e1d8ae7c79 Assembly-CSharp.dll:TMPro.Examples.Benchmark01_UGUI
 e4b7c813b0045a9b8013c4793cdf7df0 Assembly-CSharp.dll:.SetCardInfo
@@ -20,7 +21,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-9236dab09ca6be8cad6a63a13aa873b3 Assembly-CSharp.dll:.affichedeck
+191dbf5d1f7c31d58ec16db5bfb42739 Assembly-CSharp.dll:.affichedeck
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -88,7 +89,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 6a492d7b8465b2c00d15794caa46ec2e Assembly-CSharp.dll:TMPro.Examples.TMPro_InstructionOverlay
 39863b2760c84a7ee305d1894e40b1cc Assembly-CSharp.dll:.RecupName
-7ef8ceca4e847c3e342d34bc05c95b5f Assembly-CSharp.dll:.adddeck
+3487e1ec9d2bd6f2253e9891732006ef Assembly-CSharp.dll:.adddeck
 765037da3d8faeee91e39d672b924c61 Assembly-CSharp.dll:.EnvMapAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -119,7 +120,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-ffc0bfa549034a5496a039bf1c81c213 Assembly-CSharp.dll:.MainMenu
+2f3094fa8ec4cb23125fac25d5774c75 Assembly-CSharp.dll:.MainMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.TMP_PhoneNumberValidator
 e3162be7dec98def39b20b170b9c6a4a Assembly-CSharp.dll:.Card1
 1957a9369e72d2661ae9d0de26e7d064 Assembly-CSharp.dll:TMPro.Examples.WarpTextExample

@@ -298,6 +298,7 @@
     <Compile Include="Assets\decks\click.cs" />
     <Compile Include="Assets\decks\deck.cs" />
     <Compile Include="Assets\decks\listedecks.cs" />
+    <Compile Include="Assets\decks\nbcarte.cs" />
     <Compile Include="Assets\decks\RecupName.cs" />
     <Compile Include="Assets\Drag.cs" />
     <Compile Include="Assets\Drop.cs" />

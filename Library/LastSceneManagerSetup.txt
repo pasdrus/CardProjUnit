@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/listedeck.unity
+- path: Assets/DeckAttack.unity
   isLoaded: 1
   isActive: 1
