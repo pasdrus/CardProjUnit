@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -8,14 +10,13 @@ using UnityEngine.UI;
 public class adddeck : MonoBehaviour
 {
 
-
     public GameObject itemTemplate;
+    public GameObject itemTemplate2;
     public GameObject content;
     public listedecks liste;
     public deck _currentCard;
     public RecupName recup;
     public Booldontdestroy allow;
-
 
 
 
@@ -28,19 +29,67 @@ public class adddeck : MonoBehaviour
         if (i < liste.deckls.Count)
         {
 
-            
+
             GameObject copy = Instantiate(itemTemplate);
+            GameObject copydel = Instantiate(itemTemplate2);
+
             //On copy itemTemplate qui est un bouton
 
             //on transform le content pour y ajouter le bouton  // copy.transform.parent = content.transform; Vielle Version
 
             copy.transform.SetParent(content.transform);
-            
+            copydel.transform.SetParent(content.transform);
+
             string s = liste.deckls[i];
             copy.GetComponentInChildren<Text>().text = s;
-
-
             int copyIndex = i;
+            copydel.GetComponent<Button>().onClick.AddListener(
+
+                () =>
+                {
+                    Debug.Log("aaai = " + copyIndex);
+                    
+                    string path = Application.persistentDataPath + "/" + liste.deckls[copyIndex] + ".json";
+                    
+                    // On retire l'élement de la liste
+                    liste.deckls.Remove(liste.deckls[copyIndex]);
+                    // On supprime le fichier ayant pour nom liste.deckls[copyIndex]
+                    File.Delete(path);
+                    //On détruit tous les boutons dans content puis on fait recommencer i à 0 pour qu'il recharge la liste avec les nouveaux id;
+                    foreach (Transform child in content.transform)
+                    {
+                        GameObject.Destroy(child.gameObject);
+                    }
+                    i = 0;
+                    
+                    
+                    // sauvegarde
+
+                    string[] fis;
+
+                    fis = new string[liste.deckls.Count];
+
+                    int j = 0;
+                    foreach (String str in liste.deckls)
+                    {
+                        fis[j] = str;
+                        j++;
+
+                    }
+
+                    
+                    string fi = JsonHelper.ToJson(fis, true);
+                    path = Application.persistentDataPath + "/xxdeckxx.json";
+                    System.IO.File.WriteAllText(path, fi);
+
+
+                }
+
+                );
+
+            
+
+
             copy.GetComponent<Button>().onClick.AddListener(
 
                  () =>

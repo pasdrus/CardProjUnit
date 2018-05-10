@@ -5873,12 +5873,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1764013412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 919c90f2de8c0324c920d7a958c3a638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemTemplate: {fileID: 105624317}
+  itemTemplate2: {fileID: 0}
   content: {fileID: 597337822}
   liste: {fileID: 1764013421}
   _currentCard: {fileID: 1764013417}
