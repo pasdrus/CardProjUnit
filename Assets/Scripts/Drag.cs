@@ -14,19 +14,22 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        Drag d = eventData.pointerDrag.GetComponent<Drag>();
+        string Player = d.typeOfPlayer.ToString();
+        if (Player == "PLAYER" && Game.PlayerTurn == true)
+        {
+            parentToReturnTo = this.transform.parent;
 
-        parentToReturnTo = this.transform.parent;
-
-        this.transform.SetParent(this.transform.parent.parent);
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
-
+            this.transform.SetParent(this.transform.parent.parent);
+            GetComponent<CanvasGroup>().blocksRaycasts = false;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Drag d = eventData.pointerDrag.GetComponent<Drag>();
         string Player = d.typeOfPlayer.ToString();
-        if (Player == "PLAYER")
+        if (Player == "PLAYER" && Game.PlayerTurn == true)
         {
             //Debug.Log(d.typeOfPlayer);
         //On doit transformer les coordonnées de la souris car on est en mode world space

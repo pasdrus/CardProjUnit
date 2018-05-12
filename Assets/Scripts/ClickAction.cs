@@ -20,7 +20,7 @@ public class ClickAction : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Cliqué "+ gameObject.transform.parent.name);
+        //Debug.Log("Cliqué "+ gameObject.transform.parent.name);
 
 
         //Debug.Log(gameObject.GetComponent<CardDisplay1>());
@@ -33,11 +33,11 @@ public class ClickAction : MonoBehaviour, IPointerDownHandler
 
         //Debug.Log(Cardstamina + " -- " + PlayerStamina );
 
-        if (gameObject.transform.parent.name == "DropZoneAction" && Player.GetPlayerStamina()>0 && PlayerStamina >= Cardstamina && PlayerAction>0)
+        if (gameObject.transform.parent.name == "DropZoneAction" && Player.GetPlayerStamina() > 0 && PlayerStamina >= Cardstamina && PlayerAction > 0 && Game.PlayerTurn == true)
         {
             //Effectue l'action et applique les dégats pour l'instant seulement des cartes attaques
             CardDisplay1 carte = gameObject.GetComponent<CardDisplay1>();
-            Debug.Log(carte.multAttackText.text);
+            //Debug.Log(carte.multAttackText.text);
             int attaque = int.Parse(carte.multAttackText.text);
             int stamina = int.Parse(carte.staminaText.text);
             Enemy.ReceiveDamage(attaque);

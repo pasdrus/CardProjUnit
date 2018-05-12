@@ -10,7 +10,7 @@ public class Game : MonoBehaviour {
     public Text turn;
     public Text turnText;
     float t = 120;
-    bool PlayerTurn;
+    static public bool PlayerTurn;
     public Button EndTurnButton;
 	// Use this for initialization
 	void Start () {
