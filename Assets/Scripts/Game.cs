@@ -17,7 +17,7 @@ public class Game : MonoBehaviour {
         StartCoroutine(ShowMessage("Tour du joueur", 2));
         PlayerTurn = true;
         turnText.text = "";
-        
+        EndTurnButton.onClick.AddListener(EndTurn);
     }
 	
 	// Update is called once per frame
@@ -26,10 +26,11 @@ public class Game : MonoBehaviour {
         int m = (int)t / 60;
         int s = (int)t / 2;
         timer.text = "Temps restant \n" + m.ToString() + " : " + s.ToString();
-        EndTurnButton.onClick.AddListener(EndTurn);
+        
         if(PlayerTurn == true)
         {
             turn.text = "Tour du joueur";
+            
         }
         else
         {
@@ -53,7 +54,6 @@ public class Game : MonoBehaviour {
 
     void EndTurn()
     {
-
         if(PlayerTurn == true)
         {
             StartCoroutine(ShowMessage("Tour du monstre", 2));
@@ -61,8 +61,12 @@ public class Game : MonoBehaviour {
         }
         else
         {
+            Player.RecupAction();
+            Player.RecupStamina();
             StartCoroutine(ShowMessage("Tour du joueur", 2));
+            
             PlayerTurn = true;
+            
         }
         
         t = 120;

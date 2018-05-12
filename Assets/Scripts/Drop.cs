@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class Drop : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler {
 
     public Drag.Action typeOfAction = Drag.Action.HAND;
+    public Drag.Player typeOfPlayer = Drag.Player.PLAYER;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -21,7 +22,7 @@ public class Drop : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
         Drag d = eventData.pointerDrag.GetComponent<Drag>();
         if(d != null)
         {
-            if(typeOfAction == d.typeOfAction || typeOfAction == Drag.Action.HAND) {
+            if(typeOfAction == d.typeOfAction && typeOfPlayer == d.typeOfPlayer || typeOfAction == Drag.Action.HAND && typeOfPlayer == d.typeOfPlayer) {
                 d.parentToReturnTo= this.transform;
                 
                 /*

@@ -473,6 +473,8 @@ MonoBehaviour:
   nameText: {fileID: 114689260345897670}
   descriptionText: {fileID: 114997310415969880}
   artworkImage: {fileID: 114486046073826800}
+  hoveringImage: {fileID: 0}
+  hoveringLight: {fileID: 2100000, guid: 0c84bea1845b83249a3c7749b6e07e72, type: 2}
   staminaText: {fileID: 114367397533693596}
   multAttackText: {fileID: 114955722490190366}
   multElemText: {fileID: 114898640498014998}
