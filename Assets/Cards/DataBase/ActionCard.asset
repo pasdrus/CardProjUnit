@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b609956e3abbf2d4b8b6cff8e8ac3199, type: 3}
+  m_Name: ActionCard
+  m_EditorClassIdentifier: 
+  dataAsArray:
+  - {fileID: 11400000, guid: 1261416bb1eaa0d439db926a4138e4b2, type: 2}
+  - {fileID: 11400000, guid: 03f22a2ab5f7f814e9f342f7a23f1e2e, type: 2}
+  - {fileID: 11400000, guid: a467b6f14686bcb419ef0757ff0cfc61, type: 2}
+  - {fileID: 11400000, guid: e33d222a2fada4248bdd7aa9bbde1619, type: 2}
+  - {fileID: 11400000, guid: 070767b25c905c04ba1226995bd318f9, type: 2}
+  - {fileID: 11400000, guid: 6dfc15cabac2dd44fa9b3b3b226d35d8, type: 2}
